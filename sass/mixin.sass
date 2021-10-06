@@ -1,0 +1,43 @@
+$resp_step_1-min: 424px
+$resp_step_1: 768px
+$resp_step_2: 1035px
+$resp_step_3: 1280px
+$resp_step_4: 1537px
+
+$content-max-w: $resp_step_3
+
+
+@mixin respond-to-max($custom)
+    @media only screen and (max-width: $custom - 1)
+        @content;
+
+
+@mixin respond-to-min($custom1)
+    @media only screen and (min-width: $custom1)
+        @content;
+
+@mixin line-verical()
+    content: ''
+    display: block
+    width: 1px
+    height: 100%
+    position: absolute
+    @content;
+
+@mixin line-round()
+    content: ''
+    display: block
+    width: 10px
+    height: 10px
+    position: absolute
+    border-radius: 50%
+    @content;
+
+@mixin line-horizontal()
+    content: ''
+    display: block
+    height: 1px
+    width: 100%
+    position: absolute
+    @content;
+
