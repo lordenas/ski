@@ -11,6 +11,11 @@
     font-size: 3.25rem
     font-weight: 700
 
+.title
+    color: $primary
+    font-size:  1.875rem
+    font-weight: 600
+
 
 .main-block-info
     display: flex
@@ -26,3 +31,61 @@
     &__text
         font-style: italic
         color: $secondary
+
+.block-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0 auto
+    margin-top: 60px
+    &__item
+        width: 262px
+        height: 193px
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        text-align: center
+        margin-bottom: 30px
+    &__title
+        color: $orange
+        font-weight: bold
+        margin-top: 22px
+        margin-bottom: 12px
+    &__description
+        color: $secondary
+        padding: 0 20px
+
+
+.block-preview
+    &__description
+        color: $secondary
+        font-size: 1.25rem
+        padding-right: 90px
+    &__title
+        color: $primary
+        font-size: 1.875rem
+        margin-bottom: 30px
+        font-weight: 500
+
+
+.partner
+    width: 100%
+    background: url(/img/background-snow.png) no-repeat 100%
+    background-size: cover
+    background-position: center
+    height: 450px
+    &__title
+        color: $primary
+        font-size: 1.875rem
+        margin-bottom: 30px
+        font-weight: 500
+        margin-top: 35px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+    &__image
+        width: 196px
+        margin-bottom: 45px
