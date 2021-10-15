@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../../layout/header'
 import Footer from '../../layout/footer'
+import Partner from '../../layout/partner'
 import { Button, Card } from '../../components/ui-components'
 import { FaRegStar, FaGraduationCap } from 'react-icons/fa';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
@@ -146,6 +147,8 @@ const Detail: NextPage = () => {
                     </div>
                 </div>
             </div>
+            <Partner />
+            <Footer />
         </div>
     )
 }

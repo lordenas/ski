@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import { Button, Card } from '../components/ui-components'
+import Partner from '../layout/partner'
 
 const Home: NextPage = () => {
 	return (
@@ -17,7 +19,7 @@ const Home: NextPage = () => {
 							и сноубордах
 						</div>
 						<div className="mt-3">
-							<Button>Начать обучение</Button>
+							<Link href="/catalog"><a><Button>Начать обучение</Button></a></Link>
 						</div>
 					</div>
 				</div>
@@ -35,7 +37,7 @@ const Home: NextPage = () => {
 				</div>
 			</section>
 			<section className="container">
-				<div className="block-cards" style={{width: 552}}>
+				<div className="block-cards" style={{width: 634}}>
 					<Card className="block-cards__item">
 						<img src="/img/map.svg" width="60px" />
 						<div className="block-cards__title">Любой курорт</div>
@@ -66,7 +68,7 @@ const Home: NextPage = () => {
 						<div className="block-preview__description mb-5">
 							Наши инструкторы не только красиво катаются, но и могут объяснить, какие упражнения вам делать, и скорректируют ошибки, научат если вы уже умеете кататься.
 						</div>
-						<Button>Начать обучение</Button>
+						<Link href="/catalog"><a><Button>Начать обучение</Button></a></Link>
 					</div>
 					<div className="col-xs-6">
 						<img src="/img/instructor.png" />
@@ -88,33 +90,7 @@ const Home: NextPage = () => {
 					</div>
 				</div>
 			</section>
-			<div className="partner">
-				<section className="container mt-10">
-					<div className="partner__title">
-						Наши партнеры
-					</div>
-					<div className="partner__list">
-						<div className="partner__image">
-							<img src="/img/part1.png" />
-						</div>
-						<div className="partner__image">
-							<img src="/img/part2.png" />
-						</div>
-						<div className="partner__image">
-							<img src="/img/part3.png" />
-						</div>
-						<div className="partner__image">
-							<img src="/img/part4.png" />
-						</div>
-						<div className="partner__image">
-							<img src="/img/part5.png" />
-						</div>
-						<div className="partner__image">
-							<img src="/img/part6.png" />
-						</div>
-					</div>
-				</section>
-			</div>
+			<Partner />
 			<Footer />
 		</div>
 	)

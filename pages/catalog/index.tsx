@@ -1,27 +1,49 @@
 import { NextPage } from 'next';
 import Header from '../../layout/header'
 import Footer from '../../layout/footer'
-import { Button, Card } from '../../components/ui-components'
+import Partner from '../../layout/partner'
+import { Button, Card, Input, Select } from '../../components/ui-components'
 import CardBlock from './components/card'
+import { useState } from 'react';
 
 const Catalog:  NextPage = () => {
+    const [input, setInput] = useState<string>('')
+
     return (
         <div>
             <div className="catalog-background">
                 <Header />
             </div>
             <div className="container mt-10">
+                <Input
+                    value={input}
+                    onChange={setInput}
+                    label="Вид спорта"
+                />
+                <br></br>
+                <br></br>
+                <Select
+                    value={input}
+                    onChange={setInput}
+                    label="Вид спорта"
+                />
+                <br></br>
+                <br></br>
                 <div className="catalog-content">
+
                     {
-                        testData.map((item) => (
+                        testData.map((item, index) => (
                             <CardBlock
                                 onClick={() => {}}
                                 info={item}
+                                key={index}
                             />
                         ))
                     }
                 </div>
             </div>
+            <Partner />
+            <Footer />
         </div>
     )
 }

@@ -5,8 +5,10 @@ import Image from 'next/image'
 const Header: NextPage = () => {
 	return (
         <header className="header">
-            <div className="logo">
-                <img src="/img/logo.png" />
+            <div className="container">
+                <div className="logo">
+                    <img src="/img/logo.png" />
+                </div>
             </div>
         </header>
 	)
