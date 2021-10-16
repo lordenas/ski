@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import Header from '../../layout/header'
 import Footer from '../../layout/footer'
 import Partner from '../../layout/partner'
-import { Button, Card, Input, Select } from '../../components/ui-components'
+import { Button, Tag, Input, Select } from '../../components/ui-components'
 import CardBlock from './components/card'
 import { useState } from 'react';
 
@@ -13,23 +13,73 @@ const Catalog:  NextPage = () => {
         <div>
             <div className="catalog-background">
                 <Header />
+                <div className="container">
+                    <div className="main-title mt-5" style={{color: '#6E6D7A'}}>Научим кататься<br />
+                        на горных лыжах <br />
+                        и сноубордах
+                    </div>
+                </div>
             </div>
             <div className="container mt-10">
-                <Input
-                    value={input}
-                    onChange={setInput}
-                    label="Вид спорта"
-                />
-                <br></br>
-                <br></br>
-                <Select
-                    value={input}
-                    onChange={setInput}
-                    label="Вид спорта"
-                />
-                <br></br>
-                <br></br>
-                <div className="catalog-content">
+                <div className="row">
+
+                    <div className="col-md-3 pr-2">
+                        <Select
+                            value={input}
+                            onChange={setInput}
+                            label="Выберите город"
+                            placeholder="Выберите город"
+                            dataOption={[{label: 'Красная поляна', value: 0}, {label: 'Роза хутор', value: 1}, {label: 'Горки город', value: 2}, {label: 'Мезмай', value: 3}]}
+                        />
+                    </div>
+
+                    <div className="col-md-3 pr-2">
+                        <Select
+                            value={input}
+                            onChange={setInput}
+                            label="Выберите вид спорта"
+                            placeholder="Выберите вид спорта"
+                            dataOption={[{label: 'Горные лыжи', value: 0}, {label: 'Сноуборд', value: 1}, {label: 'Горные санки', value: 2}]}
+                        />
+                    </div>
+
+                    <div className="col-md-3 pr-2">
+                        <Input
+                            value={input}
+                            onChange={setInput}
+                            label="Дата"
+                            type="date"
+                            placeholder="00.00.0000"
+                        />
+                    </div>
+
+                    <div className="col-md-3">
+                        <Select
+                            value={input}
+                            onChange={setInput}
+                            label="Вид занятий"
+                            placeholder="Вид занятий"
+                            dataOption={[{label: 'Индивидуальные', value: 0}, {label: 'Групповые', value: 1}]}
+                        />
+                    </div>
+
+                </div>
+                <div className="d-flex mt-5">
+                    <Tag 
+                        onRemove={() => {}}
+                        className="mr-2"
+                    >
+                        Красная Поляна
+                    </Tag>
+                    <Tag 
+                        onRemove={() => {}}
+                    >
+                        Сноуборд
+                    </Tag>
+                </div>
+               
+ 
+                <div className="catalog-content mt-10">
 
                     {
                         testData.map((item, index) => (

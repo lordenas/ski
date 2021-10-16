@@ -5,7 +5,7 @@
         border: 1px solid $dop
         border-radius: 0.5rem
         height: 2.5rem
-        padding: 1rem
+        padding: 0 1rem
         position: relative
         width: 100%
         color: $secondary
@@ -13,6 +13,9 @@
             box-shadow: 0px 0px 4px 2px RGBA(255, 105, 0, 0.51)
         &:disabled
             color: $dop
+        &::placeholder
+            padding: 5px
+            color: #000
         &--error
             border: 1px solid $danger
             &:focus

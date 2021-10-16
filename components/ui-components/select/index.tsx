@@ -12,6 +12,7 @@ type SelectComponentProps = {
     error?: string;
     value: string;
     onChange: (val: string) => void;
+    dataOption: Array<any>
 }
 
 const groupStyles = {
@@ -38,6 +39,21 @@ const groupBadgeStyles: CSSProperties = {
 };
 
 
+const dot = (color = '#ccc') => ({
+  alignItems: 'center',
+  display: 'flex',
+
+  ':before': {
+    backgroundColor: color,
+    borderRadius: 10,
+    content: '" "',
+    display: 'block',
+    marginRight: 8,
+    height: 10,
+    width: 10,
+  },
+});
+
 const customStyles: StylesConfig<ColourOption>  = {
   control: (styles, state) => ({ 
     ...styles, 
@@ -58,7 +74,8 @@ const customStyles: StylesConfig<ColourOption>  = {
   input: (provided, state) => ({
     ...provided,
     fontSize: 14,
-    fontWeight: 400
+    fontWeight: 400,
+    //...dot()
   }),
   placeholder: (provided, state) => ({
     ...provided,
@@ -74,6 +91,12 @@ const customStyles: StylesConfig<ColourOption>  = {
   indicatorSeparator: (provided, state) => ({
     ...provided,
     backgroundColor: '#FFF'
+  }),
+  singleValue: (provided, state) => ({
+    ...provided,
+    color: '#6E6D7A',
+    fontSize: 14
+    //...dot()
   })
 }
 
@@ -108,10 +131,11 @@ const SelectComponent: FC<SelectComponentProps> = (props) => {
                 props.label &&
                     <label className="app-input__label" id={props.id}>{ props.label }</label>
             }
-            <Select<ColourOption | FlavourOption, false, GroupedOption>
-                options={groupedOptions}
+            <Select<any, false, GroupedOption>
+                options={props.dataOption}
                 classNamePrefix="app-select"
                 components={{ DropdownIndicator }}
+                placeholder={props.placeholder || ''}
                 formatGroupLabel={formatGroupLabel}
                 theme={(theme) => ({
                   ...theme,
@@ -123,6 +147,8 @@ const SelectComponent: FC<SelectComponentProps> = (props) => {
                     primary25: 'rgb(255, 105, 0, 0.2)',
                   },
                 })}
+                noOptionsMessage={() => <span>Список пуст</span>}
+                //@ts-ignore
                 styles={customStyles}
             />
         </div>
