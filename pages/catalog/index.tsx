@@ -14,7 +14,7 @@ const Catalog:  NextPage = () => {
             <div className="catalog-background">
                 <Header />
                 <div className="container">
-                    <div className="main-title mt-5" style={{color: '#6E6D7A'}}>Научим кататься<br />
+                    <div className="main-title mt-5" style={{color: '#FFF'}}>Научим кататься<br />
                         на горных лыжах <br />
                         и сноубордах
                     </div>
