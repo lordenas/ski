@@ -19,24 +19,24 @@ const CardBlock: FC<CardBlockProps> = (props) => {
         <Link href="/detail"><a>
             <div className="card-block">
                 <div className="card-block__image">
-                    <img src={props.info.image} />
+                    <img src={props.info?.image} />
                 </div>
                 <div className="card-block__hover">
                     <div className="card-block__description">
                         <div className="card-block__name">
-                            {props.info.name}
+                            {props.info?.name}
                         </div>
                         <div className="card-block__location">
-                            {props.info.location}
+                            {props.info?.location}
                         </div>
                         <div className="card-block__other">
-                            Вид спорта: {props.info.sport}
+                            Вид спорта: {props.info?.sport}
                         </div>
                         <div className="card-block__other">
-                            Возраст: {props.info.age}
+                            Возраст: {props.info?.age}
                         </div>
                         <div className="card-block__other">
-                            Стаж: {props.info.experience}
+                            Стаж: {props.info?.experience}
                         </div>
                     </div>
                     <div className="card-block__button">
