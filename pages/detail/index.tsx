@@ -90,11 +90,31 @@ const Detail: NextPage = () => {
                                 Услуги и цены
                             </div>
                             <div className="price__item">
-                                <div className="price__item-name">Сноуборд</div>
+                                <div className="price__item-name">Вип</div>
                                 <div className="price__item-price">2000 Р / 60 мин.</div>
                             </div>
                             <div className="price__item">
-                                <div className="price__item-name">Групповые занятия</div>
+                                <div className="price__item-name">Индивидуальные</div>
+                                <div className="price__item-price">3000 Р / 60 мин.</div>
+                            </div>
+                            <div className="price__item">
+                                <div className="price__item-name">Групповые</div>
+                                <div className="price__item-price">3000 Р / 60 мин.</div>
+                            </div>
+                            <div className="price__item">
+                                <div className="price__item-name">Детские</div>
+                                <div className="price__item-price">3000 Р / 60 мин.</div>
+                            </div>
+                            <div className="price__item">
+                                <div className="price__item-name">Детский лагерь</div>
+                                <div className="price__item-price">3000 Р / 60 мин.</div>
+                            </div>
+                            <div className="price__item">
+                                <div className="price__item-name">Курс Повышения Мастерства</div>
+                                <div className="price__item-price">3000 Р / 60 мин.</div>
+                            </div>
+                            <div className="price__item">
+                                <div className="price__item-name">Выездная школа</div>
                                 <div className="price__item-price">3000 Р / 60 мин.</div>
                             </div>
                         </div>

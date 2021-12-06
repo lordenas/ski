@@ -30,8 +30,8 @@ const Home: NextPage = () => {
 						<img src="/img/illustr-1.png" />
 						<div className="mt-2 main-block-info__title">О проекте</div>
 						<div className="mt-3 main-block-info__text">
-						В пик горнолыжного сезона найти хорошего специалиста не просто. Клуб <span style={{fontWeight: 500}}>alpine skiing</span> – это сервис для заказа услуг инструктора на любом горнолыжном курорте. Здесь можно в два клика подобрать
-						и забронировать профессионала.
+						В пик горнолыжного сезона найти хорошего специалиста не просто. Клуб <span style={{fontWeight: 500}}>alpine skiing</span> – это сервис для заказа услуг инструктора на любом горнолыжном курорте. 
+						Здесь можно в два клика подобрать и забронировать высококвалифицированного инструктора.
 						</div>
 					</div>
 				</div>
@@ -40,12 +40,12 @@ const Home: NextPage = () => {
 				<div className="block-cards" style={{width: 634}}>
 					<Card className="block-cards__item">
 						<img src="/img/map.svg" width="60px" />
-						<div className="block-cards__title">Любой курорт</div>
+						<div className="block-cards__title">Карта курорта</div>
 						<div className="block-cards__description">Красная поляна, Домбай, Шерегеш, Горы зовут и д.р.</div>
 					</Card>
 					<Card className="block-cards__item">
 						<img src="/img/ski.svg" width="60px" />
-						<div className="block-cards__title">Прокат оборудования</div>
+						<div className="block-cards__title">Прокат снаряжения</div>
 						<div className="block-cards__description">Аренда профессионального снаряжения и инвентаря</div>
 					</Card>
 					<Card className="block-cards__item">
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
 					</Card>
 					<Card className="block-cards__item">
 						<img src="/img/children.svg" width="60px" />
-						<div className="block-cards__title">Обучаем детей</div>
+						<div className="block-cards__title">Детский клуб</div>
 						<div className="block-cards__description">Группы для детей от 3 до 12 лет</div>
 					</Card>
 				</div>
