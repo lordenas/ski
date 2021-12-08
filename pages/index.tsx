@@ -44,7 +44,7 @@ const Home: NextPage = () => {
 						<div className="block-cards__description">Красная поляна, Домбай, Шерегеш, Горы зовут и д.р.</div>
 					</Card>
 					<Card className="block-cards__item">
-						<img src="/img/ski.svg" width="60px" />
+						<img src="/img/ski.svg" width="130px" />
 						<div className="block-cards__title">Прокат снаряжения</div>
 						<div className="block-cards__description">Аренда профессионального снаряжения и инвентаря</div>
 					</Card>
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
 			<section className="block-preview container mt-10">
 				<div className="row">
 					<div className="col-xs-6">
-						<img src="/img/ekiperov.png" />
+						<img src="/img/kit.jpg" />
 					</div>
 					<div className="col-xs-6">
 						<div className="block-preview__title">Экипировка</div>
