@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 				<Header />
 				<div className="container">
 					<div className="row">
-						<div className="main-title mt-5">Научим кататься<br />
+						<div className="main-title mt-5" style={{color: '#133E8C'}}>Научим кататься<br />
 							на горных лыжах <br />
 							и сноубордах
 						</div>

@@ -7,7 +7,7 @@ const Header: NextPage = () => {
         <header className="header">
             <div className="container">
                 <div className="logo">
-                    <img src="/img/logo.png" />
+                    <img src="/img/logo-orange.png" />
                 </div>
             </div>
         </header>
